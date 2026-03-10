@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="paperNameEditText" type="id"/>
+    <item name="bundleNameEditText" type="id"/>
+    <item name="notificationEditText" type="id"/>
+    <item name="examinerEditText" type="id"/>
+    <item name="paymentNotificationEditText" type="id"/>
+    <item name="logoutButton" type="id"/>
+    <item name="teachersListView" type="id"/>
+    <item name="paperIdEditText" type="id"/>
+</resources>

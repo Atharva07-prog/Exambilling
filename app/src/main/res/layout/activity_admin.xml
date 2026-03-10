@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- Header Section -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/exambillTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Exambill"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                tools:ignore="RelativeOverlap" />
+
+            <ImageView
+                android:id="@+id/examLogo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription=""
+                android:src="@drawable/exam_logo"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="4dp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/admin_view"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Progress Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/paper_checked"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:id="@+id/examinerProgressPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/examiner_progress_0"
+            android:textSize="14sp"
+            android:drawablePadding="6dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/bundleProgressPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bundle_progress_0"
+            android:textSize="14sp"
+            android:drawablePadding="6dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- EditText Fields (Made Smaller) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="6dp">
+
+            <EditText
+                android:id="@+id/subjectNameEditText"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:autofillHints=""
+                android:hint="@string/enter_subject_name"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textSize="14sp"/>
+
+            <ImageButton
+                android:id="@+id/addSubjectButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="@string/add_subject"
+                android:src="@drawable/ic_add_subject"
+                android:layout_marginStart="6dp"/>
+
+        </LinearLayout>
+
+
+
+        <EditText
+            android:id="@+id/courseNameEditText"
+            android:layout_width="346dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="6dp"
+            android:autofillHints=""
+            android:hint="@string/enter_course_name"
+            android:inputType="text"
+            android:padding="8dp"
+            android:textSize="14sp" />
+
+
+        <EditText
+            android:id="@+id/paperNameEditText"
+            android:layout_width="344dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="6dp"
+            android:autofillHints=""
+            android:hint="@string/enter_paper_name"
+            android:inputType="text"
+            android:padding="8dp"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/bundleNameEditText"
+            android:layout_width="344dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="6dp"
+            android:autofillHints=""
+            android:hint="@string/enter_bundle_name"
+            android:inputType="text"
+            android:padding="8dp"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/notificationEditText"
+            android:layout_width="346dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="6dp"
+            android:autofillHints=""
+            android:hint="@string/enter_notification_message"
+            android:inputType="text"
+            android:padding="8dp"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/paymentNotificationEditText"
+            android:layout_width="342dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="6dp"
+            android:autofillHints=""
+            android:hint="@string/payment_details"
+            android:inputType="text"
+            android:padding="8dp"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/examinerEditText"
+            android:layout_width="344dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            android:autofillHints=""
+            android:hint="@string/enter_examiner_name"
+            android:inputType="text"
+            android:padding="8dp"
+            android:textSize="14sp" />
+        <EditText
+            android:id="@+id/UserEditText"
+            android:layout_width="344dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            android:autofillHints=""
+            android:hint="@string/Enter_User_id"
+            android:inputType="text"
+            android:padding="8dp"
+            android:textSize="14sp" />
+
+
+        <!-- Button Section -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <ImageButton
+                android:id="@+id/addCourseButton"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:contentDescription="@string/add_course"
+                android:src="@drawable/ic_add_course" />
+
+            <ImageButton
+                android:id="@+id/addPaperButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="@string/add_paper"
+                android:src="@drawable/ic_add_paper"/>
+
+            <ImageButton
+                android:id="@+id/addBundleButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="@string/add_bundle"
+                android:src="@drawable/ic_add_bundle"/>
+
+            <ImageButton
+                android:id="@+id/manageUsersButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="@string/manage_users"
+                android:src="@drawable/ic_manage_users"/>
+
+            <ImageButton
+                android:id="@+id/manageTeachersButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="@string/manage_teachers"
+                android:src="@drawable/ic_manage_teacher"/>
+
+            <ImageButton
+                android:id="@+id/generateNotificationButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="@string/generate_notification"
+                android:src="@drawable/ic_notification"/>
+
+            <ImageButton
+                android:id="@+id/assignExaminerButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="@string/assign_examiner"
+                android:src="@drawable/ic_assign_examiner"/>
+
+            <ImageButton
+                android:id="@+id/generatePaymentNotificationButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/generate_payment_notification"
+                android:src="@drawable/ic_payment" />
+
+        </LinearLayout>
+
+        <!-- Payment Notification Button -->
+    </LinearLayout>
+</ScrollView>
